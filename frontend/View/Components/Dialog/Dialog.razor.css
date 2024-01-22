@@ -1,0 +1,38 @@
+﻿.dialog-bg {
+    align-items: center;
+    background-color: rgba(0,0,0,.7);
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.dialog-container {
+    background-color: #eee;
+    border: solid 1px #eee;
+    border-radius: .5rem;
+    max-width: 90%;
+    min-width: 300px;
+    outline: solid 1px #eee;
+    padding: 1rem;
+}
+
+.dialog-header {
+    align-items: center;
+    border-bottom: solid 1px #ddd;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dialog-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.dialog-body {
+    padding: 1rem;
+}
