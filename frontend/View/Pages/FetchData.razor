@@ -1,5 +1,6 @@
 ﻿@page "/fetchdata"
 @inject HttpClient Http
+@inherits PageBase
 
 <PageTitle>Weather forecast</PageTitle>
 
@@ -41,7 +42,10 @@ else
 
     protected override async Task OnInitializedAsync()
     {
-        forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+        await RunWithErrorHandling(async () =>
+        {
+            forecasts = await Http.GetFromJsonAsync<WeatherForecast[]>("sample-data/weather.json");
+        });
     }
 
     public class WeatherForecast
