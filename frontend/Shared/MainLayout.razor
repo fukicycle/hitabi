@@ -19,3 +19,7 @@
         }
     </main>
 </div>
+@if (StateContainer.Message is not null)
+{
+    <Dialog Title="情報" BodyMsg="@StateContainer.Message" />
+}
