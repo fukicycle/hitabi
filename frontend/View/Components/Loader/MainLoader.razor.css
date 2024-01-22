@@ -1,11 +1,11 @@
 ﻿.loader-bg {
     align-items: center;
-    background-color: rgba(0,0,0,.7);
+    background-color: #fff;
     display: flex;
     justify-content: center;
     height: 100%;
     left: 0;
-    position: fixed;
+    position: absolute;
     top: 0;
     width: 100%;
     z-index: 50;
