@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@inject StateContainer StateContainer
 
 <div class="page">
     <div class="sidebar">
@@ -15,3 +16,7 @@
         </article>
     </main>
 </div>
+@if (StateContainer.IsLoading)
+{
+    <MainLoader />
+}
