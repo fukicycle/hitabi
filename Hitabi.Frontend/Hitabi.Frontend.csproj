@@ -18,7 +18,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Components\Labels\" />
+
+    <Folder Include="Components/Labels/" />
+    <Folder Include="Services/" />
+    <Folder Include="Services/Interfaces/" />
+    <Folder Include="Stores/" />
   </ItemGroup>
 
 </Project>
