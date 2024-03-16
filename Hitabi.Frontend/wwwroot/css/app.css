@@ -1,3 +1,50 @@
+:root {
+    --accent-color: rgba(76, 175, 80, 1); /* #4caf50 */
+    --background-color-dark-theme: rgba(33, 33, 33, 1); /* #212121 */
+    --background-color-light-theme: rgba(245, 245, 245, 1); /* #f5f5f5 */
+    --dark-primary-color: rgba(255, 160, 0, 1); /* #ffa000 */
+    --divider-color: rgba(189, 189, 189, 1); /* #bdbdbd */
+    --light-primary-color: rgba(255, 236, 179, 1); /* #ffecb3 */
+    --primary-color: rgba(76, 175, 80, 1); /* #4caf50 */
+    --primary-text-color: rgba(33, 33, 33, 1); /* #212121 */
+    --secondry-text-color: rgba(117, 117, 117, 1); /* #757575 */
+    --selected-button-color: rgba(16, 43, 18, 1); /* #102b12 */
+    --text-icon-color: rgba(33, 33, 33, 1); /* #212121 */
+
+    --primary-border-radius: .4rem;
+    --primary-box-shadow: 0 .3rem .1rem -.2rem rgba(0, 0, 0, .2), 0 .2rem .2rem 0 rgba(0, 0, 0, .14), 0 0.1rem 0.5rem 0 rgba(0, 0, 0, .12);
+    --primary-focus-border: .3rem solid rgba(27, 94, 32, 1);
+    --primary-focus-box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+}
+
+html, body, #app {
+    background-color: var(--background-color-light-theme);
+    font-family: 'Kosugi', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+button {
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: var(--primary-border-radius);
+    box-shadow: var(--primary-box-shadow);
+    color: var(--primary-text-color);
+    font-family: 'Kosugi', sans-serif;
+    font-size: inherit;
+}
+
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
 }

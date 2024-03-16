@@ -1,0 +1,8 @@
+﻿.login-button {
+    height: 50%;
+    width: 50%;
+}
+
+    .login-button:active {
+        box-shadow: none;
+    }
