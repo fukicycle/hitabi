@@ -1,0 +1,9 @@
+﻿.card-description {
+    height: 100%;
+    width: calc(100% - .5rem);
+}
+
+    .card-description p {
+        font-size: 1.2rem;
+        line-height: 100%;
+    }
