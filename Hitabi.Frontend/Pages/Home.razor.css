@@ -1,7 +1,22 @@
-﻿.home {
+﻿li {
     align-items: center;
     display: flex;
-    flex-direction: column;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+}
+
+    li:first-child {
+        padding-top: .5rem;
+    }
+
+    li:last-child {
+        padding-bottom: .5rem;
+    }
+
+.home {
+    align-items: center;
+    display: grid;
     height: 100%;
     justify-content: center;
     row-gap: 1rem;
