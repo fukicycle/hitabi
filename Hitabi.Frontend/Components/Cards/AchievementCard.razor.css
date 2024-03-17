@@ -2,17 +2,17 @@
     background-color: var(--background-color-light-them);
     border-radius: var(--primary-border-radius);
     box-shadow: var(--primary-box-shadow);
-    column-gap: .5rem;
+    column-gap: .4rem;
     display: grid;
     grid-template-areas:
         "header header"
         "content-image content-description"
         "footer footer";
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: 25% 50% 25%;
     height: 12rem;
-    padding: .5rem;
-    width: 80%;
+    padding: .4rem;
+    width: 100%;
 }
 
     .achievement-card:active {
