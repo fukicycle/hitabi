@@ -1,4 +1,5 @@
 ﻿.achievement-card {
+    background-color: var(--background-color-light-them);
     border-radius: var(--primary-border-radius);
     box-shadow: var(--primary-box-shadow);
     column-gap: .5rem;
@@ -13,6 +14,10 @@
     padding: .5rem;
     width: 80%;
 }
+
+    .achievement-card:active {
+        box-shadow: none;
+    }
 
     .achievement-card .header {
         grid-area: header;
