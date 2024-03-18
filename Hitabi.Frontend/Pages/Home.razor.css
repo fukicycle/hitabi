@@ -3,15 +3,16 @@
     display: flex;
     list-style: none;
     justify-content: center;
+    padding: 0 .8rem;
     width: 100%;
 }
 
     li:first-child {
-        padding-top: .5rem;
+        padding-top: .4rem;
     }
 
     li:last-child {
-        padding-bottom: .5rem;
+        padding-bottom: .4rem;
     }
 
 .home {
@@ -19,6 +20,6 @@
     display: grid;
     height: 100%;
     justify-content: center;
-    row-gap: 1rem;
+    row-gap: .8rem;
     width: 100%;
 }

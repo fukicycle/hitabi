@@ -1,0 +1,7 @@
+﻿.vertical-separator {
+    border-left-color: var(--divider-color);
+    border-left-style: solid;
+    border-left-width: .1rem;
+    height: 80%;
+    margin: 0 .8rem;
+}
