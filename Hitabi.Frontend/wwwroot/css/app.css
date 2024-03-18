@@ -40,16 +40,6 @@ body, #app {
     font-size: 1.6rem;
 }
 
-button {
-    background-color: var(--primary-color);
-    border: none;
-    border-radius: var(--primary-border-radius);
-    box-shadow: var(--primary-box-shadow);
-    color: var(--primary-text-color);
-    font-family: 'Montserrat', sans-serif;
-    font-size: inherit;
-}
-
 .valid.modified:not([type=checkbox]) {
     outline: 1px solid #26b050;
 }

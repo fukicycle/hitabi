@@ -1,0 +1,11 @@
+﻿.card-detail-description {
+    height: 100%;
+    width: calc(100% - .4rem);
+}
+
+    .card-detail-description p {
+        height: 100%;
+        overflow: auto;
+        text-align: start;
+        width: 100%;
+    }
