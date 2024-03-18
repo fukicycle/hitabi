@@ -1,0 +1,10 @@
+﻿.back-button {
+    border-radius: 50%;
+    height: 2rem;
+    margin: .2rem;
+    width: 2rem;
+}
+
+    .back-button:active {
+        box-shadow: none;
+    }

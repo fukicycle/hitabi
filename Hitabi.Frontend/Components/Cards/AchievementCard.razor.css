@@ -1,5 +1,5 @@
 ﻿.achievement-card {
-    background-color: var(--background-color-light-them);
+    background-color: var(--background-color-light-theme);
     border-radius: var(--primary-border-radius);
     box-shadow: var(--primary-box-shadow);
     column-gap: .4rem;
