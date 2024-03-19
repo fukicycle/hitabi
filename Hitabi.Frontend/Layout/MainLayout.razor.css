@@ -1,0 +1,19 @@
+﻿header {
+    height: 4rem;
+    width: 100%;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 8rem);
+    justify-content: center;
+    overflow: auto;
+    width: 100%;
+}
+
+footer {
+    height: 4rem;
+    width: 100%;
+}

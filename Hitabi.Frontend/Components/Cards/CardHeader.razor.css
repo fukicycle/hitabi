@@ -1,0 +1,11 @@
+﻿.card-header {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+    .card-header p {
+        font-size: 1.8rem;
+        line-height: 100%;
+    }

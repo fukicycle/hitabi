@@ -1,0 +1,12 @@
+﻿.card-footer {
+    align-items: end;
+    display: flex;
+    height: 100%;
+    justify-content: end;
+    width: calc(100% - .4rem);
+}
+
+    .card-footer p {
+        font-size: 1.8rem;
+        line-height: 100%;
+    }

@@ -1,0 +1,15 @@
+﻿.card-description {
+    height: 100%;
+    width: calc(100% - .4rem);
+}
+
+    .card-description p {
+        display: -webkit-box;
+        font-size: 1.2rem;
+        height: 100%;
+        overflow: hidden;
+        text-align: start;
+        width: 100%;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+    }
