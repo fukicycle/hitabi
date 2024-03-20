@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Hitabi.Backend;
+namespace Hitabi.Backend.Controllers;
 
 [Route("/api/v1/keep-alives")]
 public class KeepAliveController : ControllerBase
