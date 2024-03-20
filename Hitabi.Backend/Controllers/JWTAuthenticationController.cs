@@ -16,9 +16,10 @@ public sealed class JWTAuthenticationController : ControllerBase
     [HttpPost]
     public IActionResult Login([FromBody] LoginRequestDto loginRequestDto)
     {
-        if (_jwtAuthenticationService.Authentication(loginRequestDto.UserGuid, loginRequestDto.Email))
+        if (_jwtAuthenticationService.Authentication(loginRequestDto.Email))
         {
-            string token = _jwtAuthenticationService.GenerateAccessToken(loginRequestDto.UserGuid, loginRequestDto.Email);
+            //TODO(ここでデータベースからユーザ情報のGuidを取得する)
+            string token = _jwtAuthenticationService.GenerateAccessToken(Guid.NewGuid(), loginRequestDto.Email);
             return Ok(new LoginResponseDto(token));
         }
         return Forbid();

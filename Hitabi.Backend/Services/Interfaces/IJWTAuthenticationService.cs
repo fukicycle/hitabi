@@ -4,7 +4,7 @@ namespace Hitabi.Backend.Services.Interfaces;
 
 public interface IJWTAuthenticationService
 {
-    bool Authentication(Guid userGuid, string email);
+    bool Authentication(string email);
 
     string GenerateAccessToken(Guid userGuid, string email);
 

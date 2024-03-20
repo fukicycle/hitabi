@@ -13,7 +13,7 @@ public sealed class JWTAuthenticationService : IJWTAuthenticationService
     {
         _logger = logger;
     }
-    public bool Authentication(Guid userGuid, string email)
+    public bool Authentication(string email)
     {
         //TODO(未実装)
         return true;
