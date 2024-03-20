@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Hitabi.Backend.Controllers;
 
 [Route("/api/v1/keep-alives")]
-public class KeepAliveController : ControllerBase
+public sealed class KeepAliveController : ControllerBase
 {
     [HttpGet]
     [Route("")]
