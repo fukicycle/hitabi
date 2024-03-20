@@ -1,4 +1,6 @@
 using System.Security.Cryptography;
+using Hitabi.Backend.Services;
+using Hitabi.Backend.Services.Interfaces;
 using Hitabi.Shared;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
@@ -37,6 +39,9 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJw
 });
 
 builder.Services.AddControllers();
+
+//作成したサービスの登録
+builder.Services.AddScoped<IJWTAuthenticationService, JWTAuthenticationService>();
 
 var app = builder.Build();
 
