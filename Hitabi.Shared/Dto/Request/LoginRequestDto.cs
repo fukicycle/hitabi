@@ -2,11 +2,9 @@
 
 public sealed class LoginRequestDto
 {
-    public LoginRequestDto(string email, Guid userGuid)
+    public LoginRequestDto(string email)
     {
         Email = email;
-        UserGuid = userGuid;
     }
     public string Email { get; }
-    public Guid UserGuid { get; }
 }
