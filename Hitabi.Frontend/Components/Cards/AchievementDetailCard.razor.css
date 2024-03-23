@@ -11,10 +11,9 @@
         "footer footer";
     grid-template-columns: 50% 50%;
     grid-template-rows: auto 30% 30% 30% auto;
-    height: calc(100% - 1.6rem);
-    padding: .4rem;
+    height: 100%;
     row-gap: .4rem;
-    width: calc(100% - .8rem);
+    width: 100%;
 }
 
     .achievement-detail-card .header {
