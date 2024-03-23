@@ -1,0 +1,25 @@
+﻿li {
+    align-items: center;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    width: 100%;
+}
+
+    li:first-child {
+        padding-top: .4rem;
+    }
+
+    li:last-child {
+        padding-bottom: .4rem;
+    }
+
+.plan-list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: start;
+    row-gap: .8rem;
+    width: 100%;
+}
