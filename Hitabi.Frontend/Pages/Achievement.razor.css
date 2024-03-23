@@ -3,7 +3,6 @@
     display: flex;
     list-style: none;
     justify-content: center;
-    padding: 0 .8rem;
     width: 100%;
 }
 
@@ -17,9 +16,10 @@
 
 .achievement {
     align-items: center;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    justify-content: center;
+    justify-content: start;
     row-gap: .8rem;
     width: 100%;
 }
