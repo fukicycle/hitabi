@@ -1,0 +1,10 @@
+﻿.plan-calendar {
+    height: 100%;
+    width: 100%;
+}
+
+    .plan-calendar .add-button {
+        bottom: 1rem;
+        position: absolute;
+        right: .4rem;
+    }

@@ -1,0 +1,39 @@
+﻿.calendar {
+    height: 100%;
+    table-layout: fixed;
+    width: 100%;
+}
+
+    .calendar thead {
+        height: 2.4rem;
+        width: 100%;
+    }
+
+        .calendar thead > tr {
+            height: 100%;
+            width: 100%;
+        }
+
+            .calendar thead > tr > th {
+                height: 100%;
+            }
+
+    .calendar tbody {
+        height: calc(100% - 2.4rem);
+    }
+
+        .calendar tbody > tr {
+            height: calc(100% / 6);
+        }
+
+            .calendar tbody > tr > td {
+                border: 1px solid var(--divider-color);
+                border-radius: var(--primary-border-radius);
+                box-shadow: var(--primary-box-shadow);
+                height: inherit;
+                overflow: auto;
+            }
+
+                .calendar tbody > tr > td:active {
+                    box-shadow: none;
+                }

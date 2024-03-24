@@ -1,0 +1,16 @@
+﻿.calendar-cell {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow: auto;
+    row-gap: .4rem;
+    width: 100%;
+}
+
+    .calendar-cell p {
+        font-size: 1.4rem;
+    }
+
+        .calendar-cell p:not(:first-child) {
+            background-color: var(--primary-color);
+        }

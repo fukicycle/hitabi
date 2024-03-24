@@ -1,0 +1,13 @@
+﻿.add-card {
+    align-items: center;
+    background-color: var(--background-color-light-theme);
+    display: flex;
+    height: 12rem;
+    justify-content: center;
+    padding: .4rem;
+    width: 100%;
+}
+
+    .add-card:active {
+        box-shadow: none;
+    }
