@@ -11,7 +11,7 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(policy =>
     {
-        policy.WithOrigins("https://localhost:7175", "https://fukicycle.github.io")
+        policy.WithOrigins("https://localhost:7175", "https://hitabi.web.app")
                 .WithMethods("GET", "POST", "OPTIONS", "DELETE")
                 .WithHeaders("Authorizaion", "Content-Type")
                 .AllowCredentials();
