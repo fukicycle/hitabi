@@ -9,11 +9,14 @@ updates:
     directory: "/Hitabi.Frontend" # Location of package manifests
     schedule:
       interval: "weekly"
+    target-branch: dev
   - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/Hitabi.Backend" # Location of package manifests
     schedule:
       interval: "weekly"
+    target-branch: dev
   - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/Hitabi.Shared" # Location of package manifests
     schedule:
       interval: "weekly"
+    target-branch: dev
