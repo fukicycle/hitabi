@@ -7,6 +7,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Repositories/" />
+    <Folder Include="Repositories/Interfaces/" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Hitabi.Shared\Hitabi.Shared.csproj" />
   </ItemGroup>
 
