@@ -8,7 +8,7 @@ namespace Hitabi.Backend.Repositories.Interfaces
 
         Follower GetFollowerByGuid(Guid id);
 
-        Follower CreateFollower();
+        Follower CreateFollower(Follower follower);
 
         bool UpdateFollower();
     }

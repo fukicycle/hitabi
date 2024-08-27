@@ -8,8 +8,8 @@ namespace Hitabi.Backend.Repositories.Interfaces
 
         CopyInfo GetCopyInfoByGuid(Guid guid);
 
-        CopyInfo CreateCopyInfo();
+        CopyInfo CreateCopyInfo(CopyInfo copyInfo);
 
-        bool UpdateCopyInfo();
+        bool UpdateCopyInfo(Guid guid, Guid tripScheduleGuid, Guid MemberGuid);
     }
 }

@@ -8,8 +8,8 @@ namespace Hitabi.Backend.Repositories.Interfaces
 
         MemberBudget GetMemberBudgetByGuid(Guid guid);
 
-        MemberBudget CreateMemberBudget();
+        MemberBudget CreateMemberBudget(MemberBuget memberBuget);
 
-        bool UpdateMemberBudget();
+        bool UpdateMemberBudget(Guid guid, Guid memberGuid, int price);
     }
 }

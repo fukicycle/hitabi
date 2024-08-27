@@ -8,8 +8,8 @@ namespace Hitabi.Backend.Repositories.Interfaces
 
         Area GetAreaByGuid(Guid guid);
 
-        Area CreateArea();
+        Area CreateArea(Area area);
 
-        bool UpdateArea();
+        bool UpdateArea(Guid guid, string name);
     }
 }

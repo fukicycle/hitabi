@@ -8,8 +8,8 @@ namespace Hitabi.Backend.Repositories.Interfaces
 
         Member GetMemberByGuid(Guid guid);
 
-        Member CreateMember();
+        Member CreateMember(Member member);
 
-        bool UpdateMember();
+        bool UpdateMember(Guid guid, string? email, string displayName, Guid loginTypeGuid);
     }
 }
