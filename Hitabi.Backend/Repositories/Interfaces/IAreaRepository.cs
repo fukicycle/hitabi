@@ -10,6 +10,6 @@ namespace Hitabi.Backend.Repositories.Interfaces
 
         Area CreateArea(Area area);
 
-        bool UpdateArea(Guid guid, string name);
+        bool UpdateArea(Area area);
     }
 }

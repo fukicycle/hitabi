@@ -10,6 +10,6 @@ namespace Hitabi.Backend.Repositories.Interfaces
 
         Member CreateMember(Member member);
 
-        bool UpdateMember(Guid guid, string? email, string displayName, Guid loginTypeGuid);
+        bool UpdateMember(Member member);
     }
 }

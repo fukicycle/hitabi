@@ -8,8 +8,8 @@ namespace Hitabi.Backend.Repositories.Interfaces
 
         LoginType GetLoginTypeByGuid(Guid id);
 
-        LoginType CreateLoginType();
+        LoginType CreateLoginType(LoginType loginType);
 
-        bool UpdateLoginType();
+        bool UpdateLoginType(LoginType loginType);
     }
 }

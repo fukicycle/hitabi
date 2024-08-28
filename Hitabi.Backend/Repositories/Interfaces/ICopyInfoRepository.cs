@@ -10,6 +10,6 @@ namespace Hitabi.Backend.Repositories.Interfaces
 
         CopyInfo CreateCopyInfo(CopyInfo copyInfo);
 
-        bool UpdateCopyInfo(Guid guid, Guid tripScheduleGuid, Guid MemberGuid);
+        bool UpdateCopyInfo(CopyInfo copyInfo);
     }
 }

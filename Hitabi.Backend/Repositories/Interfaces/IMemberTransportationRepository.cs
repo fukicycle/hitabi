@@ -8,8 +8,8 @@ namespace Hitabi.Backend.Repositories.Interfaces
 
         MemberTransportation GetMemberTransportationByGuid(Guid guid);
 
-        MemberTransportation CreateTransportation();
+        MemberTransportation CreateTransportation(MemberTransportation memberTransportation);
 
-        bool UpdateTransportation();
+        bool UpdateTransportation(MemberTransportation memberTransportation);
     }
 }
