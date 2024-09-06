@@ -1,7 +1,5 @@
 using System.Security.Cryptography;
 using Hitabi.Backend.DBContext;
-using Hitabi.Backend.Services;
-using Hitabi.Backend.Services.Interfaces;
 using Hitabi.Shared;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
