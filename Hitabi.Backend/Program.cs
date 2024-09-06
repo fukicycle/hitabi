@@ -15,29 +15,9 @@ builder.Services.AddCors(options =>
     {
         policy.WithOrigins("https://localhost:7175", "https://hitabi.web.app")
                 .WithMethods("GET", "POST", "OPTIONS", "DELETE")
-                .WithHeaders("Authorizaion", "Content-Type")
+                .WithHeaders("Content-Type", HttpHeader.ACCESS_TOKEN_HEADER)
                 .AllowCredentials();
     });
-});
-
-//JWTの設定
-//JWTキーの作成
-RandomNumberGenerator.Fill(ApplicationSettings.JWT_KEY);
-
-//JWT認証の設定
-builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
-    {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = "sato-home.mydns.jp",
-        ValidAudience = "fukicycle.github.io",
-        IssuerSigningKey = new SymmetricSecurityKey(ApplicationSettings.JWT_KEY),
-        ClockSkew = TimeSpan.Zero
-    };
 });
 
 builder.Services.AddControllers();
@@ -46,7 +26,6 @@ builder.Services.AddDbContext<HitabiDBContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DB")));
 
 //作成したサービスの登録
-builder.Services.AddScoped<IJWTAuthenticationService, JWTAuthenticationService>();
 
 var app = builder.Build();
 
